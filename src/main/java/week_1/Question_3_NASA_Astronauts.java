@@ -43,11 +43,14 @@ public class Question_3_NASA_Astronauts {
         // return true if the user meets these qualifications
         // return false otherwise
 
-        // TODO remove this line and replace with your own code
 
+        // two if statements are layered together to check if a person meets the requirements needed
+        if (height >= 58 && height <= 76){
+            if (swimDistance >= 75){
+                return true;
+            }
+        }
         return false;
-
-
     }
 
 }

@@ -61,7 +61,12 @@ public class Question_4_Mail_Prices {
         * and the current non-machinable surcharge.
         */
 
-        //TODO delete this line and replace with your own code
+        // this block of code checks if the letter is rectangle and flat, and from the given values it calculates the price
+        if (isRectangle == true && isFlat == true){
+            return MACHINABLE_LETTER_PRICE;
+        }else if (isRectangle != true || isFlat != true){
+            return MACHINABLE_LETTER_PRICE + NON_MACHINABLE_SURCHARGE;
+        }
         return 0;   // This is the wrong answer, but Java requires us to return something.
 
     }
