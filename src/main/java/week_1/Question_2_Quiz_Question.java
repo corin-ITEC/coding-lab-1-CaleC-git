@@ -13,32 +13,30 @@ import static input.InputUtils.stringInput;
  */
 
 public class Question_2_Quiz_Question {
-    
+
     public static void main(String[] args) {
-        
+
         System.out.println("Quiz time!");
         System.out.println("What is the name of the classic 1972 arcade game based on table tennis?");
         String answer = stringInput("Enter your answer: ");
-        
+
         boolean correct = checkAnswer(answer);
-        
+
         if (correct) {
             System.out.println("You are correct!");
         } else {
             System.out.println("Sorry, the answer is Pong.");
         }
-        
+
     }
-    
+
     public static boolean checkAnswer(String answer) {
-        
+
         // TODO check that the user's answer is "Pong" in any letter case.
         // Case doesn't matter, so "pong" or "PONG" or any other variation in case is the correct answer.
         // Remember that using == to compare Strings may not do what you expect it to do!
-        
-        // TODO replace this line with your own code
-        return false;
-    }
-    
-}
 
+        // returns whether or not the answer typed in was equal to pong
+        return answer.equalsIgnoreCase("pong");
+    }
+}
