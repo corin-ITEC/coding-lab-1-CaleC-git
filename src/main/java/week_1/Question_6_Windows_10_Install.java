@@ -45,7 +45,11 @@ public class Question_6_Windows_10_Install {
         // Return true if the computer can be upgraded
         // Return false if the computer can't be upgraded.
 
-        // TODO remove this line, and replace with your own code.
+        if (currentOS.equalsIgnoreCase("windows 7") || currentOS.equalsIgnoreCase("windows 8")){
+            if (processorSpeed >= 1 && ram >= 2){
+                return true;
+            }
+        }
         return false;
 
     }
